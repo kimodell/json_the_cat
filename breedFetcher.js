@@ -16,7 +16,7 @@ const fetchBreedDescription = function(breedName, callback) {
         //Call callback with null as the error and description/result as second argument
         callback(null, data[0].description);
       } else {
-        //Call the callback error message and null description 
+        //Call the callback error message and null description
         callback('Breed not found', null);
       }
     }
