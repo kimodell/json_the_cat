@@ -1,6 +1,6 @@
 const request = require('request');
 //declare variable to take command line arg for specific breed name
-const breed = `https://api.thecatapi.com/v1/breeds/search?q=${process.argv.slice(2)}`;
+//const breed = `https://api.thecatapi.com/v1/breeds/search?q=${process.argv.slice(2)}`;
 
 const fetchBreedDescription = function(breedName, callback) {
 
@@ -19,4 +19,8 @@ const fetchBreedDescription = function(breedName, callback) {
       }
     }
   });
+};
+
+module.exports {
+  fetchBreedDescription
 };
